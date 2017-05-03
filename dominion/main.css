@@ -1,0 +1,567 @@
+/* fonts */
+
+/* montserrat */
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/montserrat-light.woff2') format('woff2'),
+         url('fonts/montserrat-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/montserrat-regular.woff2') format('woff2'),
+         url('fonts/montserrat-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* proxima-nova */
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('fonts/proximanova-light.woff2') format('woff2'),
+         url('fonts/proximanova-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('fonts/proximanova-regular.woff2') format('woff2'),
+         url('fonts/proximanova-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, { font-family: 'montserrat'; line-height: 1em; margin: 0; }
+body, p { font-family: 'proxima-nova'; }
+
+
+/*upper navbar styles*/
+
+.navigation{
+    width: 100%;
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navigation--index{
+    background-color: rgba(255, 255, 255, .15);
+    position: absolute;
+
+}
+
+
+.menu-container--index,
+.menu-container {
+    padding-right: 10px;
+    margin: 0;
+    float: right;
+}
+
+.menu-container--index a,
+.menu-container a {
+    float: left;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1em;
+    padding: 32px 10px;
+    display: block;
+    font-weight: lighter;
+}
+
+.menu-container--index a:hover{
+    background-color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    color:#FFFFFF;
+    cursor: pointer; cursor: hand;
+}
+
+.menu-container--index a:link, 
+.menu-container--index a:visited {
+    text-decoration: none;
+    color:#E5E5E5;
+}
+
+.navigation{
+    padding-right: 50px;
+}
+
+.navigation--white{
+    background-color: #FFFF;
+}
+.menu-container a:active, .menu-container a:hover, 
+.menu-container a:link, .menu-container a:visited,
+.brand, .brand:hover{
+    text-decoration: none;
+    color: #67BCF0;
+}
+.navigation--white a:hover{
+    background-color:rgba(103, 188, 240, .25);
+}
+
+.navigation--index a:active, 
+.menu-container a:hover {
+    color: #67BCF0;
+}
+
+.navigation--index a:link, .navigation--index a:visited{
+    color: #E5E5E5;
+}
+
+.brand {
+    font-family: Avenir;
+    font-weight: lighter;
+    font-size: 26px;
+    line-height: 1em;
+    padding: 27px 50px;
+    float:left;
+}
+
+.contact{ 
+    width: 90px;
+    height: 35px;
+    border-radius: 4px;
+    padding: 9.5px 12px;
+    text-align: center;  
+    font-family: montserrat;
+    font-weight: lighter;
+    font-size: 13px;
+    letter-spacing: 0;
+    float: right;
+    margin: 22px 0px;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.contact:hover{ 
+    text-decoration: none;
+    cursor: pointer; cursor: hand;
+}
+
+.contact--white{
+     background-color: #FFFFFF;
+     color:rgb(37,104,143);
+}
+
+.contact--blue{
+    background-color: #67BCF0;
+    color:#FFFFFF;
+}
+.contact--blue:hover{
+    color:#FFFFFF;
+    background-color: #67BCF0;
+    cursor: pointer; cursor: hand;
+}
+
+/*lower navbar styles*/
+
+.navigation__internal{
+    background: #67BCF0;
+    text-align: center;
+    width: 100%;
+    padding: 18px 0px;
+}
+
+.navigation__internal a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 0px 10px;
+    font-family: montserrat;
+    font-weight: lighter;
+}
+
+.menu-container--index a:hover,
+.menu-container a:hover{
+    background-color: rgba(103, 188, 240, .5);
+    color: #fff;
+}
+
+#active-tab{
+    background-color: rgba(103, 188, 240, 1);
+    color: #fff;
+}
+
+.menu-container__internal img{
+    max-height: 20px;
+    background-color: #67BCF0;
+}
+
+/*buttons styles */
+.linkButton{
+  font: 16px Avenir;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 8px; 
+  cursor: pointer; 
+  border: none;
+}
+
+.linkButton:hover{
+	text-decoration: none;
+	color: #fFFFFF;
+}
+
+.button--play{
+	background-color: #67BCF0;
+}
+.button--back{
+  	background-color: #EA1F1F;
+}
+
+/*card_selector styles */
+
+/*content*/
+.content__card_selector, 
+.content__generator, 
+.content__read_generated, 
+.content__saver,
+.content__rules,
+.content__game_assets,
+.content__read,
+.content__resume{
+    font-family: Avenir;
+    font-size: 16px;
+    background-color: #F5F5F5;
+}
+
+.content__generator,
+.content__rules{
+	margin-top: 0px;
+}
+
+.content__rules{
+    text-align: center;
+}
+
+.content__resume{
+    text-align: left;
+}
+
+.content__description{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.content__description a,
+.content__description a:hover,
+.content__description a:active,
+.content__description a:visited,
+.game_assets_link a,
+.game_assets_link a:hover,
+.game_assets_link a:active,
+.game_assets_link a:visited{
+    color: #67BCF0;
+    text-decoration: none;
+    cursor: pointer; cursor: hand;
+}
+
+.content__read{
+    padding-bottom: 25px;
+}
+
+.content__game_assets{
+    padding-top: 15px;
+}
+
+h3, h4, h5, h6{
+    color: #EA1F1F;
+    font-family: Avenir;
+    margin: 0 auto;
+}
+
+/*form*/
+.container__form{
+	margin: 0 auto;
+    background-color: #F5F5F5;
+    font-family: Avenir;
+}
+
+/*titles*/
+
+.title--deck{
+	color: #67BCF0;
+	padding: 7.5px;
+}
+
+.title--resume{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.styleQuestion{
+	color: #EA1F1F;
+	padding: 7.5px;
+}
+
+/*domsavor styles */
+
+/*table styles*/
+th, td{
+  font: 15px Avenir;
+  padding: 1%;
+  opacity: 1;
+  min-width: 115px;
+}
+
+/*JQuery-related selectors */
+.hide_on_begin{
+    display: none;
+}
+
+.show_on_begin{
+    display: block;
+}
+
+/*styles */
+
+.container span{
+    color: #EA1F1F;
+    font-family: Avenir;
+    font-size: 16px;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.margin-top-bot{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.list--resume{
+    list-style-type: none;
+}
+
+.sublist--resume{
+    margin-bottom: 20px;
+}
+
+/* navbar animation */
+
+@keyframes flash {
+    0% {color: #E5E5E5;}
+    25% {color: rgb(37,104,143);}
+    50% {color: #FFFFFF;}
+    75% {color: rgb(37,104,143);}
+    100% {color: #E5E5E5;}
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80%;
+}
+
+/* Info Box Styles */
+
+.infobox{
+    max-width: 800px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    
+/*    margin-top:55px;*/
+/*    margin-bottom: 30px;*/
+/*    position: relative;*/
+/*    transform: translateY(50%);*/
+}
+
+
+html, body { height: 100%; }
+
+
+.infobox p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+.infobox h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    line-height: 1em;
+}
+
+
+.infobox-container {
+    background-image: url('../img/axams.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.infobox .content__infobox {
+    width: 100%;
+    background-image: url('../img/prof_pic.png');
+    color: #8F8B8B;
+    border-radius: 5px;
+    background-position: center right;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.35);
+    border-radius: 0px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.content__infobox .inner {
+    width: 50%;
+    float: left;
+    padding-right: 40px;
+}
+
+.infobox-footer {
+    color: #FFf;
+    font-size: 15px;
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    display: inline-block;
+}
+
+.content__infobox {
+    font-family: Avenir;
+    float: left;
+    padding: 40px;
+    width: 50%;
+}
+
+.content__infobox a,
+.content__infobox a:focus{
+    color: #46B3E8;
+    text-decoration: none
+}
+
+.content__infobox a:hover{
+    color: rgb(37,104,143);
+    text-decoration: none;
+    cursor: pointer; cursor: hand;
+;
+}
+
+.content__infobox logos{
+    float: left;
+}
+
+.content__infobox logos:hover{
+    text-decoration: none;
+}
+
+.content__infobox img:hover{
+    opacity: .5;
+}
+
+.button{
+  font: 16px Avenir;
+  text-decoration: none;
+  background-color: #EA1F1F;
+  color: #FFFFFF;
+  padding: 10px;
+  border: 2px solid #EA1F1F;     
+  border-radius: 8px;
+}
+
+/*mobile landing*/
+.mobile-index-container{
+    background-image: url('../img/axams-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.mobile-brand{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'montserrat'; line-height: 1em; margin: 0; font-weight: lighter;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.mobile-index{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.mobile-index a{
+    color: white;
+    font-size: 24px;
+    font-family: 'montserrat'; line-height: 1em; margin: 0; font-weight: lighter;
+}
+
+.mobile-home{
+    height: 24px;
+    width:auto;
+}
+
+.mobile-home:hover{
+    cursor: pointer;
+}
+.mobile-index a:hover,
+.mobile-brand,
+.mobile-brand:hover,
+.mobile-brand:active,
+.mobile-brand:link {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.about-me-container{
+    display: none;
+}
+
+.about-me{
+    position: absolute;
+    top:50%;
+    left:10%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.about-me p{
+    color:whitesmoke;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.about-me-logos{
+    display: table;
+    table-layout: fixed;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.logo{
+    display: table-cell;
+    vertical-align: middle;
+    width:100%;
+}
+
+.about-me a,
+.about-me a:hover,
+.about-me a:active,
+.about-me a:link,
+.about-me a:visited{
+    color:whitesmoke;
+}
+
+.spacer{
+    display: table-cell;
+    width:2%;
+}
